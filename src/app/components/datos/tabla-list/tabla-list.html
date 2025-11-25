@@ -1,0 +1,14 @@
+<p>componente tabla list</p>
+<h4>directivas</h4>
+@if(datos.length){
+    <p>No hay datos para mostrar</p>
+}@else {
+    @for(datos of dataSource; track $index){
+        <div> class="Datos">
+             <p><strong>categoria:</strong>{{datos.releaseDate}}</p>
+             <p><strong>descripcion:</strong>{{datos.releaseDate}}</p>
+             <p><strong>precio:</strong>{{datos.budget}}
+        </div>
+    }
+
+}
