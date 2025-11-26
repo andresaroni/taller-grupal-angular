@@ -1,14 +1,66 @@
-
 .mi-tabla {
-    width: 100%;
-    border-collapse: collapse; 
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
-.mi-tabla th, .mi-tabla td {
-    padding: 10px 15px;      
-    border: 1px solid #ccc;  
-    text-align: left;
+.mi-tabla th,
+.mi-tabla td {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  text-align: left;
 }
 .mi-tabla th {
-    background-color: #f0f0f0; 
+  background-color: #f0f0f0;
+}
+
+.mi-tabla {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: 'Times New Roman', serif;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.mi-tabla th {
+  background: #fff9b0;
+  color: black;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  border: 1px solid black;
+}
+
+.mi-tabla td {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid black;
+  text-align: left;
+}
+
+.mi-tabla td:first-child {
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Times New Roman', serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mi-tabla tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.mi-tabla tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.mi-tabla tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.mi-tabla tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
 }
