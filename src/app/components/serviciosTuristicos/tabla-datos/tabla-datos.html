@@ -1,0 +1,25 @@
+<h3>Tabla de Servicios Turisticos</h3>
+
+<input type="text" placeholder="filtrar servicio..." #input (keyup)="buscar(input)">
+
+<table class="mi-tabla">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Categoría</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            @for (dato of datos; track $index) {
+                <tr>
+                    <td>{{ dato.id }}</td>
+                    <td>{{ dato.nombre }}</td>
+                    <td>{{ dato.categoria }}</td>
+                    <td>${{ dato.precio }}</td>
+                </tr>
+            }
+        </tbody>
+    </table>

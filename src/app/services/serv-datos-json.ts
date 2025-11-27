@@ -1,32 +1,25 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
-import { datos } from '../models/datos';
+import { Datos } from '../models/datos';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ServDatosJson {
 
-  private datosUrl ="http://localhost:4200"
+  private datosUrl = "/datos/data.json"
 
-  constructor(private httpclient:HttpClient){
+  constructor(private httpclient: HttpClient) {
   }
 
-  getDatos():Observable<datos[]>{
-    return this.httpclient.get<datos[]>(this.datosUrl);
+  getDatos(): Observable<Datos[]> {
+    return this.httpclient.get<Datos[]>(this.datosUrl);
   }
 
-  getMoviesById(id:number):Observable<datos>{
-    return this.httpclient.get<datos>(`${this.datosUrl}/${id}`);
-
+  buscarDatos(param: string): Observable<Datos[]> {
+    return this.httpclient.get<Datos[]>(this.datosUrl)
+      .pipe(map(datos => datos.filter(d => d.nombre.toLowerCase().includes(param.toLowerCase()))));
   }
-
-  getActiveMovies():Observable<datos[]>{
-    return this.httpclient.get<datos[]>(this.datosUrl)
-    .pipe(map(datos=>datos.filter(m=>m.active===true))
-    );
-  }
-
 
 }

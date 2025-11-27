@@ -1,9 +1,6 @@
+export interface Datos{
 
-export interface datos{
-budget: any;
-releaseDate: any;
-    active: boolean;
-    id?:number,
+    id:number,
     nombre:string,
     categoria: string;
     descripcion: string;

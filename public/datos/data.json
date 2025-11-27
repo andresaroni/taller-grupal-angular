@@ -1,23 +1,23 @@
 [
   {
-  "id": 1,
-  "nombre": "Recorrido al Parque Historico e Isla Santay",
-  "categoria": "Excursión",
-  "descripcion": "Disfruta un recorrido completo por las áreas naturales, culturales y arquitectónicas del Parque Histórico, acompañado de explicaciones sobre su fauna y tradiciones. Finaliza con un tranquilo paseo hacia la Isla Santay, ideal para apreciar su biodiversidad y senderos ecológicos.",
-  "precio": 45
-},
-{
-  "id": 2,
-  "nombre": "Paseo en Catamarán por el Río Guayas",
-  "categoria": "Paseo",
-  "descripcion": "Vive una experiencia relajante a bordo de un catamarán mientras descubres los puntos emblemáticos del perfil urbano de Guayaquil desde el río. El viaje incluye música ambiental y una vista privilegiada del atardecer sobre el malecón.",
-  "precio": 20
-},
-{
-  "id": 3,
-  "nombre": "Recorrido por los museos de Guayaquil y el Malecón 2000",
-  "categoria": "Excursión",
-  "descripcion": "Explora los principales museos de la ciudad y disfruta una caminata guiada por el Malecón 2000, conociendo su historia, arte y espacios culturales.",
-  "precio": 45
-}
+    "id": 1,
+    "nombre": "Recorrido al Parque Historico e Isla Santay",
+    "categoria": "Excursión",
+    "descripcion": "Disfruta un recorrido completo por las áreas naturales",
+    "precio": 45
+  },
+  {
+    "id": 2,
+    "nombre": "Paseo en Catamarán por el Río Guayas",
+    "categoria": "Paseo",
+    "descripcion": "Vive una experiencia relajante a bordo de un catamarán",
+    "precio": 20
+  },
+  {
+    "id": 3,
+    "nombre": "Recorrido por los museos de Guayaquil y el Malecón 2000",
+    "categoria": "Excursión",
+    "descripcion": "Explora los principales museos de la ciudad",
+    "precio": 45
+  }
 ]
