@@ -13,15 +13,13 @@ export class TablaDatos {
   datos: Datos[] = [];
 
   constructor(private miservicio: ServDatosJson) {
-this.cargarDatos();
+    this.cargarDatos();
   }
-
 
   cargarDatos() {
     this.miservicio.getDatos().subscribe(
       (data: Datos[]) => {
         this.datos = data;
-        console.log("Pelicula " + this.datos[0].nombre);
       }
     );
   }
